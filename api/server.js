@@ -12,7 +12,7 @@ app.use(express.json());
 app.get("/", async (req, res) => {
     res.status(200).send({
         message:
-            "This is ChatGPT AI APP server url, please visit https://chatgpt-ai-app-od21.onrender.com",
+            "This is ChatGPT AI APP server url, please visit https://ease-chatbot.onrender.com",
     });
 });
 
@@ -22,6 +22,8 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 app.post("/", async (req, res) => {
+    //    console.log(req.body);
+    // res.send(req.body);   
     try {
         const response = await openai.createCompletion({
             model:"text-davinci-003",

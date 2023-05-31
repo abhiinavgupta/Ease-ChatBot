@@ -90,6 +90,9 @@ function App() {
 
     return (
         <main className="chatGPT-app">
+        <div>
+        <div className="border"  >
+        <div className="heading"> EASE - ChatBot</div>
             <section className="chat-container">
                 <div className="layout">
                     {posts.map((post, index) => (
@@ -122,6 +125,7 @@ function App() {
                     ))}
                 </div>
             </section>
+            </div>
             <footer>
                 <input
                     className="composebar"
@@ -136,7 +140,7 @@ function App() {
                     <img src={send} />
                 </div>
             </footer>
-            <div> 
+            
             
             </div>
         </main>

@@ -20,7 +20,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+.border{
+  border: 2px solid #d9d9d9;
+  border-radius: 30px;
+  margin-top: 10px ;
+  margin-bottom: 20px;
+  /* height: 95%; */
 
+}
+.heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .chatGPT-app {
   max-width: 1200px;
   margin: 0 auto;
@@ -38,6 +50,7 @@ footer {
   height: 50px;
   background: #2b2b36;
   border-radius: 10000px;
+  border: 2px solid #d9d9d9;
 }
 .composebar {
   padding: 0 10px;
@@ -57,7 +70,7 @@ footer {
   align-items: center;
   padding: 15px 25px;
   height: 40px;
-  background: linear-gradient(269deg, #2541fc 1.77%, #5466f2 99.15%);
+  background: linear-gradient(269deg, #9f9fdc 1.77%, #1930e0 99.15%);
   border-radius: 47px;
   cursor: pointer;
 }
@@ -77,6 +90,7 @@ footer {
   flex-direction: column;
   gap: 30px;
   scrollbar-width: none;
+  margin-left: 20px;
 }
 .chat-bubble {
   display: flex;
@@ -91,6 +105,7 @@ footer {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  border: 2px solid #ffffff;
 }
 .chat-bubble.bot .avatar {
   background: linear-gradient(269deg, #2541fc 1.77%, #5466f2 99.15%);
