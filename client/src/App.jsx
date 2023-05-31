@@ -17,8 +17,8 @@ function App() {
 
     const fetchBotResponse = async () => {
         const { data } = await axios.post(
-            // "https://chatgpt-ai-app-od21.onrender.com",
-            "http://localhost:5173",
+            "https://ease-chatbot.onrender.com",
+            // "http://localhost:5173",
             { input },
             {
                 headers: {
@@ -28,7 +28,7 @@ function App() {
         );
         return data;
     };
-
+//aa 
     const autoTypingBotResponse = (text) => {
         let index = 0;
         let interval = setInterval(() => {
